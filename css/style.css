@@ -615,10 +615,14 @@ color: #ffffff;
 }
 
 @media (max-width: 575px) {
+  #footer-sec{
+    height: 600px;
+  }
   #footer-sec .row{
     height: 600px;
   }
 }
+
 /* End Subscription */
 
 

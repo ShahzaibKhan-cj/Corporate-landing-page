@@ -1,40 +1,4 @@
 
-// Get the button:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   preloader  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-const preloader = document.querySelector('#preloader');
-if (preloader) {
-  window.addEventListener('load', () => {
-    preloader.remove();
-  });
-}
-// End preloader
-
-
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Aos initialization  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 function aos_init() {
   AOS.init({
@@ -50,7 +14,7 @@ window.addEventListener('load', () => {
 // End AOS
 
 
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  swiper slide cards section  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  swiper partner  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 var swiper1 = new Swiper(".mySwiper", {
    loop: true,
   speed:900,
@@ -85,54 +49,8 @@ var swiper1 = new Swiper(".mySwiper", {
     }
   }
 });
-// End card swiper
+// End swiper partner
 
 
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< swipers slide testimonials section  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-var swiper = new Swiper(".mySwiper-1", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-
-  pagination: {
-    el: '.swiper-pagination-2',
-  },
-  
-  loop: true,
-  speed:900,
-});
-// End testimonial swiper
 
 
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  pure counter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-new PureCounter();{
-  delay:1000
-};
-// End pure counter
-
-
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  scroll to top button  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-let mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
-// End Scroll top button
